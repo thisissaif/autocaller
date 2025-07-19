@@ -31,6 +31,13 @@ jobs:
         cd prodialer_app/admin-panel
         npm run build
 
+    - name: Use Node.js 20 for deploy step
+      run: |
+        sudo npm cache clean -f
+        sudo npm install -g n
+        sudo n 20
+        node -v
+
     - name: Deploy to Firebase
       uses: FirebaseExtended/action-hosting-deploy@v0
       with:

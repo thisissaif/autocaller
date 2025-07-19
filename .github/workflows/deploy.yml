@@ -38,4 +38,4 @@ jobs:
         firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
         channelId: live
         projectId: autocaller-91bb8
-        entryPoint: ./prodialer_app/admin-panel 
+        entryPoint: ./prodialer_app 
